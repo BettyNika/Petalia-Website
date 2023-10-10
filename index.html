@@ -1,0 +1,207 @@
+    <!-- ***** Author: Bethelhem Agafari ***** -->
+    <!-- ***** Course: ITSE 2402 ***** -->
+    <!-- ***** Assignment: Final Project ***** -->
+    <!-- ***** Date Created: 4/6/2023***** -->
+    <!-- ***** Date Updated: 5/4/2023 ***** -->
+
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Petalia Floral</title>
+        <link rel="stylesheet" href="petalia.css">
+        <script defer src="petalia.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header section -->
+        <header>
+            <!-- petalia logo -->
+        <div class="header-image">
+            <a href="index.html" title="Home Page"><img id="logo" src="petalialogo2.png" alt="logo" width="160px"></a>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home page">Home</a></li>
+                    <li><a href="bag_product.html" title="Product">Product</a></li>
+                    <li><a href="bag_contact.html" title="Contact page">Contact</a></li>
+                    <li><a href="bag_story.html" title="our story">Our Story</a></li>
+                    <li><a href="bag_form.html" title="Form">Form</a></li>
+                    <li><a href="bag_table.html" title="Info">Info</a></li>
+                    <li><a href="bag_links.html" title="Links">Links</a></li>
+                    <li><a href="bag_design.html" title="design document">Design Document</a></li>
+                    <li><a href="bag_cart.html" title="Shopping cart"><img src="bag_cart.png" alt="shopping cart"></a></li>      
+                </ul>
+            </nav>
+
+            <!-- Hamburger icon for mobile -->
+        <div class="menu-icon">
+            <img src="bag_hamburger.png" alt="Menu icon">
+        </div>
+        
+        </header>
+        
+            <!-- intro images of flower -->
+            <span class="introimg">
+                <img src="bag_tulip.png" alt="flower image">
+            </span>
+            <!-- introductory pharagraph -->
+            <h1 style="margin-top: 0;">Let the beauty of flowers enchant you!</h1>
+            <p>Step into our world of blooming beauty at our online floral shop.
+            Browse and order your favorite bouquets from the comfort of your own home.</p>
+        <!-- </div> -->
+
+        <!-- search bar -->
+        <div class="search-bar">
+            <form action="/search">
+                <input type="text" placeholder="Search..." name="search">
+                <button id="searchbtn" type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Featured products section -->
+        <h2 style="color: rgb(211, 101, 42); text-decoration: underline;">featured Products</h2>
+    <div class="featured-products">
+        <div class="product">
+            <img src="bag_flower3.jpg" alt="Product 1">
+            <h3>Pink peonies</h3>
+            <p style="font-weight: 1000;">$29.99</p>
+            <p>Soft and delicate</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="bag_flower2.jpg" alt="Product 2">
+            <h3>Lavender</h3>
+            <p style="font-weight: 1000;">$24.99</p>
+            <p>Calming and elegant</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="bag_flower8.jpg" alt="Product 3">
+            <h3>Tulip</h3>
+            <p style="font-weight: 1000;">$34.99</p>
+            <p>Blooming and vibrant</p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+
+     <!-- Countdown for summer sale starting June 1, 2023 -->
+     <div id="countdown">
+        <h2 style="text-decoration: none;">Our Summer Sale starts in</h2>
+        <div id="timer"></div>
+    </div>
+
+    <!-- style for countdown -->
+    <style>
+        #timer {
+            display: block;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+           font-family: 'Oswald', sans-serif;
+        }
+    </style>
+
+    <!-- script for countdown timer -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("June 1, 2023 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // Output the result in an element with id="timer"
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+            
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
+
+        
+    <!-- Acceptable user policy -->
+    <fieldset style="width: 60%; ">
+        <h2>Acceptable User Policy</h2>
+        <p>We strive to provide the best user experience for all of our visitors.
+            As such, we ask that you please refrain from any inappropriate behavior or use of our website.
+            This includes but is not limited to:</p>
+        
+        <ul id="lists1">
+        <li>Using our website for any illegal activities</li>
+        <li>Harassing or threatening other users</li>
+        <li>Hacking or attempting to access restricted areas of our website</li>
+        <li>Posting any content that is offensive, discriminatory, or defamatory</li>
+        <li>Misusing any information or content found on our website</li>
+        </ul>
+        <p>To ensure optimal viewing, we suggest using the latest version of Google Chrome or Mozilla Firefox.
+            Our website is optimized for a screen resolution of 1920 x 1080 pixels and should work with most modern devices.
+            If you have any issues with display or functionality, please contact us. Enjoy your visit!</p>
+        </fieldset>
+
+    </body>
+    <hr/>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer-links-container">
+        <div class="footer-links-column">
+            <ul class="footer-links-list">
+            <li><a href="https://www.tccd.edu/" title="TCC home Page">TCC Home Page</a></li>
+            <li><a href="bag_design.html" title="Design Document Page">Design Document Page</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Product</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-column">
+            <ul class="footer-links-list">
+            <li><a href="bag_form.html">Form</a></li>
+            <li><a href="bag_table.html">More Information</a></li>
+            <li><a href="bag_contact.html">Contact Us</a></li>
+            <li><a href="bag_story.html">Our Story</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-column">
+            <ul class="footer-links-list">
+                <li><a href="#">Copyright © 2023 Petalia Floral Company</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <!-- social media links -->
+        <div class="social-media-links">
+            <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons"><img src="bag_facebookicon.png" alt="facebook icon" width="30px" height="30px"></a> 
+            <a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons"><img src="bag_twitter.png" alt="twitter icon" width="30px" height="30px"></a>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons"><img src="bag_instagram.png" alt="instagram icon" width="30px" height="30px"></a> 
+            <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons"><img src="bag_youtube.png" alt="youtube icon" width="30px" height="30px"></a> </div>
+        </div>
+        <center style="color: white;"><span id="date"></span></center>
+        <script>
+            var date = new Date();
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("date").style.fontSize = "small";
+
+            function showEmail() {
+                document.getElementById("email").style.display = "inline";
+            }
+        </script>
+    </footer>
+</html>

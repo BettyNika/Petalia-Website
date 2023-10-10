@@ -1,0 +1,153 @@
+    <!-- ***** Author: Bethelhem Agafari ***** -->
+    <!-- ***** Course: ITSE 2402 ***** -->
+    <!-- ***** Assignment: Final Project ***** -->
+    <!-- ***** Date Created: 4/6/2023***** -->
+    <!-- ***** Date Updated: 5/4/2023 ***** -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="petalia.css">
+    <script defer src="petalia.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+         <!-- petalia logo -->
+        <div class="header-image">
+            <a href="index.html" title="Home Page"><img id="logo"  src="petalialogo2.png" alt="logo" width="160px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Home page">Home</a></li>
+                <li><a href="bag_product.html" title="Product">Product</a></li>
+                <li><a href="bag_contact.html" title="Contact page">Contact</a></li>
+                <li><a href="bag_story.html" title="our story">Our Story</a></li>
+                <li><a href="bag_form.html" title="Form">Form</a></li>
+                <li><a href="bag_table.html" title="Info">Info</a></li>
+                <li><a href="bag_links.html" title="Links">Links</a></li>
+                <li><a href="bag_design.html" title="design document">Design Document</a></li>
+                <li><a href="bag_cart.html" title="Shopping cart"><img src="bag_cart.png" alt="shopping cart"></a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu for mobile version -->
+    <div class="menu-icon">
+        <img src="bag_hamburger.png" alt="Menu icon">
+      </div>
+    </header>
+    
+    <!-- form section -->
+    <h1>Order Form</h1>
+ <form id="myForm" action="#" method="post">
+  <!-- personal Information -->
+  <fieldset>
+   <legend>Personal Information:</legend>
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name" required><br><br>
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" required><br><br>
+   <label for="phone">Phone:</label>
+   <input type="tel" id="phone" name="phone"><br><br>
+   <label for="address">Address:</label>
+   <textarea id="address" name="address"></textarea>
+  </fieldset>
+  <br>
+  <!-- order information -->
+  <fieldset>
+   <legend>Order Information:</legend>
+   <label for="product">Product:</label>
+   <input type="text" id="product" name="product" required><br><br>
+   <label for="quantity">Quantity:</label>
+   <input type="number" id="quantity" name="quantity" required><br><br>
+   <label for="delivery">Delivery:</label>
+   <select id="delivery" name="delivery">
+    <option value="standard">Standard</option>
+    <option value="express">Express</option>
+   </select>
+  </fieldset>
+  <br>
+  <!-- payment information -->
+  <fieldset>
+   <legend>Payment Information:</legend>
+   <label>Payment Method:</label><br>
+   <input type="radio" id="credit_card" name="payment" value="credit_card">
+   <label for="credit_card">Credit Card</label><br>
+   <input type="radio" id="paypal" name="payment" value="paypal">
+   <label for="paypal">PayPal</label><br><br>
+   <label for="card_number">Card Number:</label>
+   <input type="text" id="card_number" name="card_number"><br><br>
+   <label for="expiry_date">Expiry Date:</label>
+   <input type="month" id="expiry_date" name="expiry_date"><br><br>
+   <label for="cvv">CVV:</label>
+   <input type="password" id="cvv" name="cvv">
+  </fieldset>
+  <br>
+    <!-- additional information -->
+  <fieldset>
+    <legend>Additional Information:</legend>
+   <label>Interests:</label><br>
+   <input type="checkbox" id="weddings" name="interests[]" value="weddings">
+   <label for="weddings">Weddings</label><br>
+   <input type="checkbox" id="events" name="interests[]" value="events">
+   <label for="events">Events</label><br>
+   <input type="checkbox" id="gifts" name="interests[]" value="gifts">
+   <label for="gifts">Gifts</label><br><br>
+   <label for="comments">Comments:</label><br>
+   <textarea id="comments" name="comments"></textarea>
+  </fieldset>
+  <br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+ </form>
+    <hr/>
+ <!-- footer section -->
+ <footer>
+    <div class="footer-links-container">
+      <div class="footer-links-column">
+        <ul class="footer-links-list">
+          <li><a href="https://www.tccd.edu/" title="TCC home Page">TCC Home Page</a></li>
+          <li><a href="bag_design.html" title="Design Document Page">Design Document Page</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bag_product.html">Product</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-column">
+        <ul class="footer-links-list">
+          <li><a href="bag_form.html">Form</a></li>
+          <li><a href="bag_table.html">More Information</a></li>
+          <li><a href="bag_contact.html">Contact Us</a></li>
+          <li><a href="bag_story.html">Our Story</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-column">
+        <ul class="footer-links-list">
+            <li><a href="#">Copyright © 2023 Petalia Floral Company</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <!-- social media links -->
+    <div class="social-media-links">
+        <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons"><img src="bag_facebookicon.png" alt="facebook icon" width="30px" height="30px"></a> 
+        <a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons"><img src="bag_twitter.png" alt="twitter icon" width="30px" height="30px"></a>
+        <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons"><img src="bag_instagram.png" alt="instagram icon" width="30px" height="30px"></a> 
+        <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons"><img src="bag_youtube.png" alt="youtube icon" width="30px" height="30px"></a> </div>
+    </div>
+    <center style="color: white;"><span id="date"></span></center>
+        <script>
+            var date = new Date();
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("date").style.fontSize = "small";
+
+            function showEmail() {
+                document.getElementById("email").style.display = "inline";
+            }
+        </script>
+</footer>
+</body>
+</html>

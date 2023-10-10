@@ -1,0 +1,153 @@
+    <!-- ***** Author: Bethelhem Agafari ***** -->
+    <!-- ***** Course: ITSE 2402 ***** -->
+    <!-- ***** Assignment: Final Project ***** -->
+    <!-- ***** Date Created: 4/6/2023***** -->
+    <!-- ***** Date Updated: 5/4/2023 ***** -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product</title>
+        <link rel="stylesheet" href="petalia.css">
+        <script defer src="petalia.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header section -->
+        <header>
+            <!-- petalia logo -->
+        <div class="header-image">
+            <a href="index.html" title="Home Page"><img id="logo" src="petalialogo2.png" alt="logo" width="160px"></a>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home page">Home</a></li>
+                    <li><a href="bag_product.html" title="Product">Product</a></li>
+                    <li><a href="bag_contact.html" title="Contact page">Contact</a></li>
+                    <li><a href="bag_story.html" title="our story">Our Story</a></li>
+                    <li><a href="bag_form.html" title="Form">Form</a></li>
+                    <li><a href="bag_table.html" title="Info">Info</a></li>
+                    <li><a href="bag_links.html" title="Links">Links</a></li>
+                    <li><a href="bag_design.html" title="design document">Design Document</a></li>
+                    <li><a href="bag_cart.html" title="Shopping cart"><img src="bag_cart.png" alt="shopping cart"></a></li>
+                </ul>
+                
+            </nav>
+    
+            <!-- Hamburger icon for mobile -->
+        <div class="menu-icon">
+            <img src="bag_hamburger.png" alt="Menu icon">
+        </div>
+        
+        </header>
+
+        <!-- Product section -->
+        <div class="container">
+            <div class="column">
+                <img src="bag_flower4.jpg" alt="Flower 1" class="image">
+                <h2 class="name">Orange Blossom Bouquet</h2>
+                <!-- <p class="description">A beautiful bouquet of spring flowers, perfect for any occasion.</p> -->
+                <p class="price">$39.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="bag_flower1.jpg" alt="Flower 2" class="image">
+                <h2 class="name">Red Rose Bouquet</h2>
+                <!-- <p class="description">A classic bouquet of red roses, perfect for Valentine's Day or any romantic occasion.</p> -->
+                <p class="price">$49.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="bag_flower5.jpg" alt="Flower 3" class="image">
+                <h2 class="name">Pink Tulip Bouquet</h2>
+                <!-- <p class="description">A cheerful bouquet of tulip flower, perfect for brightening up any room.</p> -->
+                <p class="price">$29.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="column">
+                <img src="bag_flower6.jpg" alt="Flower 4" class="image">
+                <h2 class="name">Spring White Bouquet</h2>
+                <!-- <p class="description">A beautyful flower, perfect for celebrating the arrival of spring.</p> -->
+                <p class="price">$34.99</p>
+                <button class="button">Add to Cart</button>
+            </div>
+            <div class="more-button">
+                <button class="button">More</button>
+            </div>
+        </div>
+        <div class="product-reviews">
+            <h3>Customer Reviews</h3>
+            <form id="review-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="rating">Rating:</label>
+              <select id="rating" name="rating" required>
+                <option value="">-- Select a rating --</option>
+                <option value="5">5 stars</option>
+                <option value="4">4 stars</option>
+                <option value="3">3 stars</option>
+                <option value="2">2 stars</option>
+                <option value="1">1 star</option>
+              </select>
+          
+              <label for="review">Review:</label>
+              <textarea id="review" name="review" required></textarea>
+          
+              <button type="submit">Submit</button>
+            </form>
+          
+            <ul id="review-list"></ul>
+          </div>
+          
+    </body>
+    <hr/>
+
+     <!-- footer section -->
+     <footer>
+        <div class="footer-links-container">
+          <div class="footer-links-column">
+            <ul class="footer-links-list">
+              <li><a href="https://www.tccd.edu/" title="TCC home Page">TCC Home Page</a></li>
+              <li><a href="bag_design.html" title="Design Document Page">Design Document Page</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="">Product</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <ul class="footer-links-list">
+              <li><a href="bag_form.html">Form</a></li>
+              <li><a href="bag_table.html">More Information</a></li>
+              <li><a href="bag_contact.html">Contact Us</a></li>
+              <li><a href="bag_story.html">Our Story</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <ul class="footer-links-list">
+                <li><a href="#">Copyright © 2023 Petalia Floral Company</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <!-- social media links -->
+        <div class="social-media-links">
+            <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons"><img src="bag_facebookicon.png" alt="facebook icon" width="30px" height="30px"></a> 
+            <a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons"><img src="bag_twitter.png" alt="twitter icon" width="30px" height="30px"></a>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons"><img src="bag_instagram.png" alt="instagram icon" width="30px" height="30px"></a> 
+            <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons"><img src="bag_youtube.png" alt="youtube icon" width="30px" height="30px"></a> </div>
+        </div>
+        <center style="color: white;"><span id="date"></span></center>
+        <script>
+            var date = new Date();
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("date").style.fontSize = "small";
+
+            function showEmail() {
+                document.getElementById("email").style.display = "inline";
+            }
+        </script>
+    </footer>
+</html>

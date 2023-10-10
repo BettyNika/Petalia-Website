@@ -1,0 +1,144 @@
+    <!-- ***** Author: Bethelhem Agafari ***** -->
+    <!-- ***** Course: ITSE 2402 ***** -->
+    <!-- ***** Assignment: Final Project ***** -->
+    <!-- ***** Date Created: 4/6/2023***** -->
+    <!-- ***** Date Updated: 5/4/2023 ***** -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="petalia.css">
+    <script defer src="petalia.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <!-- petalia logo -->
+        <div class="header-image">
+            <a href="index.html" title="Home Page"><img id="logo" src="petalialogo2.png" alt="logo" width="160px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Home page">Home</a></li>
+                <li><a href="bag_product.html" title="Product">Product</a></li>
+                <li><a href="bag_contact.html" title="Contact page">Contact</a></li>
+                <li><a href="bag_story.html" title="our story">Our Story</a></li>
+                <li><a href="bag_form.html" title="Form">Form</a></li>
+                <li><a href="bag_table.html" title="Info">Info</a></li>
+                <li><a href="bag_links.html" title="Links">Links</a></li>
+                <li><a href="bag_design.html" title="design document">Design Document</a></li>
+                <li><a href="bag_cart.html" title="Shopping cart"><img src="bag_cart.png" alt="shopping cart"></a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu for mobile version -->
+    <div class="menu-icon">
+        <img src="bag_hamburger.png" alt="Menu icon">
+      </div>
+    </header>
+    
+    <!-- infromation -->
+    <h1>Important Information</h1>
+    <p>Where we offer a wide variety of fresh and beautiful flowers. Please see the table below for a list of available flowers, their colors, prices, and stock availability.</p>
+    <!-- table -->
+    <table border="1">
+  <tr>
+   <th>Flower Type</th>
+   <th>Color</th>
+   <th>Price per dozen</th>
+   <th>In Stock</th>
+  </tr>
+  <tr>
+   <td>Red Rose</td>
+   <td>Red</td>
+   <td>$49.99</td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+   <td>Pink Tulip</td>
+   <td>Pink</td>
+   <td>$29.99</td>
+   <td>No</td>
+  </tr>
+  <tr>
+   <td>Orange Blossom</td>
+   <td>Orange</td>
+   <td>$39.99</td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+   <td>Spring White</td>
+   <td>White</td>
+   <td>$34.99</td>
+   <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Pink Peonies</td>
+    <td>Pink</td>
+    <td>$29.99</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Lavender</td>
+    <td>Purple</td>
+    <td>24.99</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Tulip</td>
+    <td>Yellow and Pink</td>
+    <td>$34.99</td>
+    <td>No</td>
+  </tr>
+ </table>
+</body>
+<hr/>
+ <!-- footer section -->
+ <footer>
+    <div class="footer-links-container">
+      <div class="footer-links-column">
+        <ul class="footer-links-list">
+          <li><a href="https://www.tccd.edu/" title="TCC home Page">TCC Home Page</a></li>
+          <li><a href="bag_design.html" title="Design Document Page">Design Document Page</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="">Product</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-column">
+        <ul class="footer-links-list">
+          <li><a href="bag_form.html">Form</a></li>
+          <li><a href="bag_table.html">More Information</a></li>
+          <li><a href="bag_contact.html">Contact Us</a></li>
+          <li><a href="bag_story.html">Our Story</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-column">
+        <ul class="footer-links-list">
+            <li><a href="#">Copyright © 2023 Petalia Floral Company</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <!-- social media links -->
+    <div class="social-media-links">
+        <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons"><img src="bag_facebookicon.png" alt="facebook icon" width="30px" height="30px"></a> 
+        <a href="https://www.flaticon.com/free-icons/twitter-social-badge" title="twitter social badge icons"><img src="bag_twitter.png" alt="twitter icon" width="30px" height="30px"></a>
+        <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons"><img src="bag_instagram.png" alt="instagram icon" width="30px" height="30px"></a> 
+        <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons"><img src="bag_youtube.png" alt="youtube icon" width="30px" height="30px"></a> </div>
+    </div>
+    <center style="color: white;"><span id="date"></span></center>
+        <script>
+            var date = new Date();
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("date").style.fontSize = "small";
+
+            function showEmail() {
+                document.getElementById("email").style.display = "inline";
+            }
+        </script>
+</footer>
+</html>
